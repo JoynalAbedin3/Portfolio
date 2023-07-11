@@ -1,0 +1,207 @@
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+ 
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "popins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+  }
+
+  :root{
+    --text-color:#f5f5f5;
+    --hovor-color: #12f7ff;
+    --bg-color:#250821;
+    --big-font:2.5rem;
+    --normal-font:2rem;
+    --neon-box-shadow:0 0 .8rem #12f7ff;
+    --h2-font:3rem;
+    --p-font:1rem;
+    --font-neaon-text-shadow:0 0 10px rgba(18,247,255,0.3),
+    0 0 20px rgba(18,247,255,0.3),
+    0 0 30px rgba(18,247,255,0.3),
+    0 0 40px rgba(18,247,255,0.3),
+    0 0 70px rgba(18,247,255,0.3),
+    0 0 88px rgba(18,247,255,0.3),
+    0 0 100px rgba(18,247,255,0.3),
+    0 0 150px rgba(18,247,255,0.3);
+
+  }
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+    
+  }
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: darkolivegreen;
+}
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+span{
+    color: var(--hovor-color);
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 27px;  
+    text-decoration: none;
+}
+
+.navlist a:hover{
+    color: var(--hovor-color);
+    text-shadow: 0 0 10px rgba(18,247,255,0.3),
+    0 0 20px rgba(18,247,255,0.7),
+    0 0 30px rgba(18,247,255,0.7),
+    0 0 40px rgba(18,247,255,0.7),
+    0 0 70px rgba(18,247,255,0.7),
+    0 0 88px rgba(18,247,255,0.7),
+    0 0 100px rgba(18,247,255,0.7),
+    0 0 150px rgba(18,247,255,0.7); 
+}
+
+.navlist a.active{
+    color: var(--hovor-color);
+    
+}
+
+section{
+  padding: 100px 10%;
+}
+.home{
+  min-height: 100vh;
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  grid-gap: 4rem;
+}
+
+.home-content{
+  max-width: 600px;
+}
+
+.home-content h1{
+  font-size: var(--big-font);
+  font-weight: 700;
+}
+
+.home-content h3{
+  font-size: var(--normal-font);
+  font-weight: 700;
+  color: var(--hovor-color);
+}
+.home-content p{
+  font-size: var(--p-font);
+  color: #bdbdbd ;
+  line-height: 1.6;
+}
+.info-box{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  margin: 1rem 0 2rem;
+}
+
+.info-box h5{
+  font-size: var(--p-font);
+  font-weight: 600;
+  color: var(--text-color);
+}
+.info-box span{
+  font-size: .9rem  ;
+  color: #bdbdbd;
+}
+.home-content .btn-box{
+  width: 320px;
+  height: 45px;
+}
+.home-content .btn-box a{
+  display: inline-flex;
+  justify-content: center ;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background: transparent;
+  color: var(--hovor-color);
+  border: 2px solid var(--hovor-color);
+  font-size: var(--text-color);
+  letter-spacing: 1px;
+  font-weight: 600;
+  overflow: hidden;
+  transition: .6s;
+  box-shadow: var(--neon-box-shadow);
+  z-index: 1;
+  position: relative;
+}
+
+.btn-box a:hover{
+  color: var(--bg-color);
+}
+
+.home-content .btn-box a::before{
+  content:"";
+  position: absolute;
+  top :0;
+  left: 0;
+  height: 100%;
+  background: var(--hovor-color);
+  width: 0;
+  z-index: -1;
+  transition: .6s;
+  
+
+}
+
+.home-content .btn-box a:hover::before{
+ 
+  width: 100%;
+
+}
+
+.home-image{
+  position: relative;
+}
+.img-box{
+  text-align: center;
+  
+}
+
+
+ 
+
+
+
+ 
+ 
+
+
+
