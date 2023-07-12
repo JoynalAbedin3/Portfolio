@@ -16,7 +16,7 @@
 
           <div class="btn-box">
               <!-- <a href="http://">Download CV</a> -->
-              <a href="?page=hireme">Hire ME </a>
+              <a href="?page=hireme">Hire ME Now! </a>
           </div>
       </div>
 
